@@ -1,0 +1,34 @@
+{
+  "name": "app",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "babel-node": "babel-node --presets=latest",
+    "start": "babel-node ./bin/www",
+    "start:dev": "nodemon --exec npm run babel-node -- ./bin/www"
+  },
+  "babel": {
+    "presets": [
+      "latest"
+    ]
+  },
+  "dependencies": {
+    "autoprefixer": "^8.2.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-latest": "^6.24.1",
+    "body-parser": "~1.18.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.15.5",
+    "hbs": "~4.0.1",
+    "imagemin": "^5.3.1",
+    "imagemin-jpegtran": "^5.0.2",
+    "imagemin-pngquant": "^5.1.0",
+    "morgan": "~1.9.0",
+    "node-sass-middleware": "0.9.8",
+    "nodemailer": "^4.6.4",
+    "nodemon": "^1.17.3",
+    "postcss-middleware": "^1.1.4",
+    "serve-favicon": "~2.4.5"
+  }
+}

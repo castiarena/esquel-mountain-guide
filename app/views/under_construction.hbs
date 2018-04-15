@@ -1,0 +1,16 @@
+<section class="hero hero--construction hero--overlay">
+    <div class="hero--construction__wrapper">
+        <article class="hero--construction__container">
+            <p class="hero--title">{{text.construction}}</p>
+            <img class="hero--construction__logo" src="{{logo.url}}" alt="{{logo.alt}}">
+            <div class="hero--construction__contacts">
+                {{#each contacts}}
+                    <a href="{{this.url}}" target="_blank"
+                       class="hero--icon hero--icon__{{this.name}}">
+                        <span>{{this.name}}</span>
+                    </a>
+                {{/each}}
+            </div>
+        </article>
+    </div>
+</section>
