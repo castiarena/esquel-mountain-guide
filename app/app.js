@@ -43,7 +43,7 @@ app.use(postcssMiddleware({
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', index);
+app.use('/', under_construction);
 app.use('/users', users);
 app.use('/under-construction', under_construction);
 

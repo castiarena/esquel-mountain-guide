@@ -5,7 +5,10 @@
   "scripts": {
     "babel-node": "babel-node --presets=latest",
     "start": "babel-node ./bin/www",
-    "start:dev": "nodemon --exec npm run babel-node -- ./bin/www"
+    "start:dev": "nodemon --exec npm run babel-node -- ./bin/www",
+    "pm2:kill": "pm2 kill",
+    "pm2": "pm2",
+    "pm2:start": "pm2 start --interpreter babel-node ./bin/www"
   },
   "babel": {
     "presets": [
@@ -28,6 +31,7 @@
     "node-sass-middleware": "0.9.8",
     "nodemailer": "^4.6.4",
     "nodemon": "^1.17.3",
+    "pm2": "^2.10.2",
     "postcss-middleware": "^1.1.4",
     "serve-favicon": "~2.4.5"
   }
